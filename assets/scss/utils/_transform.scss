@@ -1,0 +1,13 @@
+.translate-middle-rotate {
+  transform: translate(-50%, -50%) rotate(-4deg);
+}
+
+.rotate {
+  &:nth-child(2n) {
+    transform: rotate(2deg);
+  }
+
+  &:nth-child(3) {
+    transform: rotate(-2deg);
+  }  
+}

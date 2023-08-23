@@ -1,0 +1,63 @@
+.object- {
+  &cover {
+    object-fit: cover;
+  }
+
+  &position- {
+    &left {
+      object-position: left 33%;
+    }
+  }
+}
+
+.hover {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &-bg-secondary {
+    &:hover::before {
+      content: '';
+      display: block;
+      width: 29px;
+      height: 29px;
+      background: $secondary;
+      border-radius: 50px;
+      position: absolute;
+      top: -3px;
+      left: -10px;
+      z-index: -1;
+    }
+  }
+
+  &-link {
+    &:hover {
+      color: #9C9E18;
+    }
+  }
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+
+  @include media-breakpoint-up(md) {
+    width: 80px;
+    height: 80px;
+  }
+
+  &-sparkler {
+    width: 20px;
+    height: 20px;
+
+    @include media-breakpoint-up(md) {
+      width: 24px;
+      height: 24px;
+    }
+
+    &-lg {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}

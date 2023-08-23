@@ -1,0 +1,24 @@
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag {
+  color: $primary;
+  font-size: $font-size-sm;
+  font-weight: 700;
+  padding: 4px 16px;
+  border: 1px solid $black;
+  border-left-width: 4px;
+
+  &:hover {
+    background: $black;
+    color: $white;
+    border-left-color: $secondary;
+  }
+
+  @include media-breakpoint-up(md) {
+    font-size: $font-size-base;
+    padding: 4px 24px;
+  }
+}

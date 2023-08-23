@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Noto+Serif+TC:wght@700&family=Yeseva+One&display=swap');
+@import "../../node_modules/bootstrap/scss/functions";
+@import './helpers/variables';
+
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/root";
+@import './helpers/utilities';
+@import "../../node_modules/bootstrap";
+
+@import "./base/base";
+@import "./components/buttons";
+@import "./components/collapse";
+@import "./components/swiper";
+@import "./components/tag";
+@import "./utils/text";
+@import "./utils/transform";
+@import "./utils/utils";
+@import "./vendor/icofont/icofont.min.css";
+
+@import './layout/header.scss';

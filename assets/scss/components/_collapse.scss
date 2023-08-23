@@ -1,0 +1,29 @@
+.navbar-collapse.show {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background: $light;
+  border-bottom: 2px solid $primary;
+  z-index: 1;
+  transition: all .5s;
+
+  @include media-breakpoint-up(md) {
+    position: relative;
+    top: 0;
+    border: 0;
+    width: auto;
+    transition-property: none;
+  }
+  
+  & .navbar-nav {
+    @include media-breakpoint-up(sm) {
+      max-width: 540px;
+      margin-right: auto;
+    }
+
+    @include media-breakpoint-up(md) {
+      margin-right: 0;
+    }
+  }
+}
