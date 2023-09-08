@@ -10,11 +10,21 @@
   padding: 4px 16px;
   border: 1px solid $black;
   border-left-width: 4px;
+  position: relative;
 
   &:hover {
     background: $black;
     color: $white;
-    border-left-color: $secondary;
+
+    &::before {
+      content: '';
+      width: 4px;
+      height: calc(100% + 4px);
+      background: $secondary;
+      position: absolute;
+      left: -4px;
+      top: -2px;
+    }
   }
 
   @include media-breakpoint-up(md) {

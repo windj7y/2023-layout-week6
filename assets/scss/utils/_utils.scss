@@ -35,6 +35,12 @@
       color: #9C9E18;
     }
   }
+
+  &-underline {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .icon {
